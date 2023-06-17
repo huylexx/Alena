@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Logo.png">
+  <title>Alena</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .nav-link {
+      color: darkgreen;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .link-text {
+      color: aliceblue;
+      position: relative;
+      padding: 5px 0px;
+      text-decoration: none;
+    }
+
+    .link-text:hover {
+      color: rgb(255, 149, 0);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: rgb(255, 128, 0);
+      transform: scale(0);
+      bottom: 0;
+      left: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .nav-link:hover {
+      color: rgb(255, 149, 0);
+    }
+
+    .nav-link:hover::after {
+      transform: scale(1);
+    }
+
+    .border {
+      width: 360px;
+      height: 230px;
+      border-radius: 20px;
+      background-color: rgb(235, 235, 235);
+
+    }
+
+    .border1 {
+      margin-top: 30px;
+      width: 360px;
+      height: 500px;
+      border-radius: 20px;
+      background-color: rgb(235, 235, 235);
+
+    }
+
+    .font {
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+
+    .font:hover {
+      color: rgb(255, 149, 0);
+    }
+
+    .card {
+      text-decoration: none;
+      color: black;
+      border: none;
+    }
+
+    .card:hover {
+      color: rgb(255, 149, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row" style="background-color:darkgreen; height: 90px;">
+    <div class="col-md-1"></div>
+    <div class="col-md-3 mt-3">
+      <img src="images/logo.webp" alt="" width="200px">
+    </div>
+    <div class="col-md-4 mt-4">
+      <div class="input-group mb-3">
+        <select class="form-select" style="border-radius: 30px 0px 0px 30px;">
+          <option>Tất cả</option>
+          <option>Phụ kiện</option>
+          <option>Quần áo</option>
+          <option>Sơ mi nữ</option>
+          <option>Sản phẩm khuyến mãi</option>
+          <option>Sản phẩm hot trend</option>
+          <option>Sản phẩm nổi bật</option>
+          <option>Quần short nam</option>
+          <option>Sơ mi nam</option>
+          <option>Bé gái</option>
+          <option>Bé trai</option>
+          <option>Thời trang nữ</option>
+          <option>Thời trang nam</option>
+        </select>
+        <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm" style="width: 250px;">
+        <button class="btn btn-warning" type="button" style="border-radius: 0px 30px 30px 0px;"><img
+            src="images/icon1.png" alt="" width="20px"></button>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3 mt-4">
+      <img src="images/icondangnhap.png" alt="" width="20px">
+      <a href="dangnhap.html" style="text-decoration: none; color: aliceblue;">Đăng nhập /</a>
+      <a href="dangky.html" style="text-decoration: none; color: aliceblue;">Đăng ký |</a>
+      <img src="images/icon3.png" alt="" width="20px">
+      <a href="giohang.html" style="text-decoration: none; color: aliceblue;">Giỏ hàng</a>
+    </div>
+  </div>
+  <div class="row" style="background-color: beige;">
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: darkgreen;"><b>Trang chủ</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sanpham.html" style="color: darkgreen;"><b>Sản phẩm</b></a>
+              <li class="nav-item">
+                <a class="nav-link" href="tintuc.html" style="color: darkgreen;"><b>Tin
+                    tức</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lienhe.html" style="color: darkgreen;"><b>Liên
+                    hệ</b></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <img src="images/icon2.png" alt="" width="20px"> Holine: 092 4373 024
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-1"></div>
+    <div class="col">
+      <a href="index.html" style="text-decoration: none; color: black;"> Trang chủ ></a>
+      <a href="tintuc.html" style="text-decoration: none; color: black;">Tin tức ></a>
+      <span style="color: green;"><b>Cách phối đồ hè nam</b></span>
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-1"></div>
+    <div class="col">
+      <div class="border">
+        <h3 style="margin-top: 10px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          DANH MỤC TIN TỨC</h3>
+        <div class="dropdown dropdown-menu-end">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            <a href="#" class="font">Tin tức thời trang</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Thời trang trong nước</a></li>
+            <li><a class="dropdown-item" href="#">Thời trang quốc tế</a></li>
+            <li><a class="dropdown-item" href="#">Xu hướng thời trang</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-menu-end">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            <a href="#" class="font">Mẹo vặt hay</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Làm sao để giữ đồ luôn thơm mát?</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-menu-end">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            <a href="#" class="font">Sao mặc đẹp</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Phối đồ hợp màu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border1">
+
+        <h3 style="margin-top: 10px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          TIN TỨC NỔI BẬC</h3>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="images/TT1.webp" alt="" width="80px" style="border-radius: 10px; margin-left: 15px;">
+          </div>
+          <div class="col-md-7">
+            <a href="TT1.html" class="card" style="background-color: rgb(235, 235, 235);">Cách Phối Đồ Hè Nam</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="images/TT2.webp" alt="" width="80px" style="border-radius: 10px; margin-left: 15px;">
+          </div>
+          <div class="col-md-7">
+            <a href="TT2.html" class="card" style="background-color: rgb(235, 235, 235);">Cách Phối Đồ Với Quần Thể Thao
+              Nam</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="images/TT3.webp" alt="" width="80px" style="border-radius: 10px; margin-left: 15px;">
+          </div>
+          <div class="col-md-7">
+            <a href="TT3.html" class="card" style="background-color: rgb(235, 235, 235);"> Cách Phối Đồ Sơ Mi Nam</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="images/TT4.webp" alt="" width="80px" style="border-radius: 10px; margin-left: 15px;">
+          </div>
+          <div class="col-md-7">
+            <a href="" class="card" style="background-color: rgb(235, 235, 235);">Cách Phối Đồ Cho Bé</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="images/TT5.webp" alt="" width="80px" style="border-radius: 10px; margin-left: 15px;">
+          </div>
+          <div class="col-md-7">
+            <a href="" class="card" style="background-color: rgb(235, 235, 235);">Mẹo Chọn Đồ Giúp Nàng Cao Và Gầy Trở
+              Nên Đầy Đặn Hơn</a>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1>Cách phối đồ hè nam</h1>
+      <img src="images/dangnhap1.webp" alt="" width="20px;"> <span style="color: rgb(162, 162, 162);"> Cafein Team
+        | Ngày 27/05/2022</span>
+      <p></p>
+      <p style="font-size: 30px;">1.Sơ mi hoạ tiết + quần denim + giày sneaker</p>
+      <p>Hãy tranh thủ những ngày hè để diện ngay chiếc áo sơ mi ngắn tay với hoạ tiết rực rỡ cũng chiếc quần
+        denim xanh kinh điển
+        và một đôi giày sneaker yêu thích. <b>Set đồ mùa hè cho nam</b> này cực kì thích hợp cho những chuyến du
+        lịch
+        biển. Những quý ông
+        lâu này thường chỉ mặc áo thun trơn quần âu thì giờ đã có dịp làm mới bản thân trong mắt mọi người rồi
+        đấy.
+      </p>
+      <img src="images/tt1.1.webp" alt="">
+      <p style="font-size: 30px;">2.Mũ tai bèo/bucket + áo phông + quần short</p>
+      <p> Một <b>set đồ mùa hè cho nam</b> khá nhẹ nhàng chính là việc sử dụng chiếc mũ tai bèo/bucket đi cùng
+        chiếc áo phông và quần short
+        màu trầm như xám hoặc đen. Ở một phương diện khác, món phụ kiện này còn là biểu tượng quyền lực của thời
+        trang đường phố.
+        Ngại gì không thử nhỉ?</p>
+      <img src="images/tt1.2.webp" alt="">
+      <p style="font-size: 30px;">3.Áo tank top + quần short + giày thể thao</p>
+      <p>Áo tank top là một trong những trang phục cực kì phù hợp với mùa hè. Và là một trong những <b>cách phối
+          đồ nam</b>
+        mùa hè chưa bao giờ lỗi mốt, đặc biệt là trong năm 2022. Hãy thử cách phối đơn giản nhất gồm áo
+        tanktop đơn giản hoặc hoạ tiết, quần short jean hoặc quần short ống rộng và một đôi giày thể thao yêu
+        thích. Set đồ này sẽ rất thích hợp cho những lần dạo phố, những chuyến đi leo núi, tập thể thao, hoặc
+        một chuyến đi biển “giải nóng” mùa hè.Áo tank top là một trong những trang phục cực kì phù hợp với mùa
+        hè. Và là một trong những <b>cách phối đồ nam</b> mùa hè chưa bao giờ lỗi mốt, đặc biệt là trong năm
+        2022. Hãy
+        thử cách phối đơn giản nhất gồm áo tanktop đơn giản hoặc hoạ tiết, quần short jean hoặc quần short ống
+        rộng và một đôi giày thể thao yêu thích. Set đồ này sẽ rất thích hợp cho những lần dạo phố, những chuyến
+        đi leo núi, tập thể thao, hoặc một chuyến đi biển “giải nóng” mùa hè.</p>
+      <img src="images/tt1.3.webp" alt="">
+      <hr style="margin-top: 50px;">
+      <p>Chia sẻ bài viết:</p>
+      <hr>
+      <p>Viết bình luận của bạn</p>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Họ và tên" name="name">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Email" name="email">
+          </div>
+        </div>
+      </form>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Nội dụng" name="text"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning">Gửi thông tin</button>
+      </form>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <hr>
+    </div>
+    <div class="col">
+      <h1 style="text-align: center;">TIN TỨC THỜI TRANG</h1>
+    </div>
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-1"></div>
+    <div class="col">
+      <img src="images/TT1.webp" alt="" width="400px"
+        style="border-radius: 20px; box-shadow: 3px 3px 3px 3px gainsboro;">
+      <a href="TT1.html" style="text-decoration: none; color: rgb(80, 80, 80);;">
+        <h5 style="margin-top: 20px;">Cách phối đồ hè nam</h5>
+      </a>
+      <img src="images/dangnhap1.webp" alt="" width="20px"> <span style="color: rgb(162, 162, 162);"> Cafein Team |
+        Ngày 27/05/2022</span>
+      <p style="color: rgb(73, 73, 73);">
+        1. Quần jogger thể thao phối với áo khoác da Nếu bạn nghĩ rằng áo khoác da chỉ có thể kết hợp với...
+        <a href="TT1.html" style="text-decoration: none; color: rgb(80, 80, 80);;"><b>Xem thêm</b>
+        </a>
+      </p>
+    </div>
+    <div class="col">
+      <img src="images/TT2.webp" alt="" width="400px"
+        style="border-radius: 20px; box-shadow: 3px 3px 3px 3px gainsboro;">
+      <a href="#" style="text-decoration: none; color: rgb(80, 80, 80);;">
+        <h5 style="margin-top: 20px;">Cách phối đồ với quần thể thao nam</h5>
+      </a>
+      <img src="images/dangnhap1.webp" alt="" width="20px"> <span style="color: rgb(162, 162, 162);"> Cafein Team |
+        Ngày 27/05/2022</span>
+      <p style="color: rgb(73, 73, 73);">
+        1. Quần jogger thể thao phối với áo khoác da Nếu bạn nghĩ rằng áo khoác da chỉ có thể kết hợp với...
+        <a href="TT1.html" style="text-decoration: none; color: rgb(80, 80, 80);"><b>Xem thêm</b>
+        </a>
+      </p>
+    </div>
+    <div class="col">
+      <img src="images/TT3.webp" alt="" width="400px"
+        style="border-radius: 20px; box-shadow: 3px 3px 3px 3px gainsboro;">
+      <a href="#" style="text-decoration: none; color: rgb(71, 71, 71);">
+        <h5 style="margin-top: 20px;">Cách phối đồ sơ mi nam</h5>
+      </a>
+      <img src="images/dangnhap1.webp" alt="" width="20px"> <span style="color: rgb(162, 162, 162);"> Cafein Team |
+        Ngày 27/05/2022</span>
+      <p style="color: rgb(73, 73, 73);">
+        1.Quần jean ống đứng Cách phối đồ với áo sơ mi nam đầu tiên mà Cardina gợi ý cho các bạn là mix...
+        <a href="TT1.html" style="text-decoration: none; color: rgb(71, 71, 71);"><b>Xem thêm</b>
+        </a>
+      </p>
+    </div>
+    <div class="col"></div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark " style="color: aliceblue;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>LIỆN HỆ VỚI CHÚNG TÔI:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <img src="images/fb (2).png" alt="" width="70px" style="margin-left: 5px;">
+        <img src="images/it.png" alt="" width="40px" style="margin-left: 5px;">
+        <img src="images/tw.png" alt="" width="30px" style="margin-left: 30px;">
+        <img src="images/gg.png" alt="" width="30px" style="margin-left: 30px;">
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i><img src="images/logo.webp" alt="" width="150px">
+            </h6>
+            <p style="color: darkorange; font-size: 20px;">
+              Shop thời trang và phụ kiện Alena
+            </p>
+            <img src="images/vitri.png" alt="" width="20px"> Địa chỉ: Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu
+            Giai, Quận Ba Đình, TP Hà Nội
+            <p></p>
+            Giờ làm việc: Từ 9:00 đến 22:00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</p>
+            <p>Holine: </p>
+            <p style="color: rgb(255, 174, 0); font-size: 20px;">092 4373 024</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Về chúng tôi
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset" style="text-decoration: none;">Trang chủ</a>
+            </p>
+            <p>
+              <a href="Sanpham.html" class="text-reset" style="text-decoration: none;">Sản phẩm</a>
+            </p>
+            <p>
+              <a href="tintuc.html" class="text-reset" style="text-decoration: none;">Tin tức</a>
+            </p>
+            <p>
+              <a href="lienhe.html" class="text-reset" style="text-decoration: none;">Liên hệ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Hỗ trợ khách hàng
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset" style="text-decoration: none;">Trang chủ</a>
+            </p>
+            <p>
+              <a href="Sanpham.html" class="text-reset" style="text-decoration: none;">Sản phẩm</a>
+            </p>
+            <p>
+              <a href="tintuc.html" class="text-reset" style="text-decoration: none;">Tin tức</a>
+            </p>
+            <p>
+              <a href="lienhe.html" class="text-reset" style="text-decoration: none;">Liên hệ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Dịch vụ</h6>
+            <p>
+              <a href="index.html" class="text-reset" style="text-decoration: none;">Trang chủ</a>
+            </p>
+            <p>
+              <a href="Sanpham.html" class="text-reset" style="text-decoration: none;">Sản phẩm</a>
+            </p>
+            <p>
+              <a href="tintuc.html" class="text-reset" style="text-decoration: none;">Tin tức</a>
+            </p>
+            <p>
+              <a href="lienhe.html" class="text-reset" style="text-decoration: none;">Liên hệ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgb(109, 109, 109); height: 70px;">
+      © Bản quyền thuộc về Cafein Team
+      <a class="text-reset fw-bold" href="#" style="text-decoration: none;"> | Cung cấp bởi Sapo</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
